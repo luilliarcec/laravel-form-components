@@ -104,7 +104,7 @@ class CustomSelect extends Select
 
         return is_string($this->selectedKey)
             ? "'{$this->selectedKey}'"
-            : $this->selectedKey;
+            : json_encode($this->selectedKey);
     }
 
     public function getContainerClass(): string
